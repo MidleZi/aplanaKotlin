@@ -1,17 +1,8 @@
-fun main(args: Array<String>) {
-    //Задание 1
-    task1()
-    //Задание 2
-    task2()
-    //Задание 3
-    task3()
-    //Задание 4
-    task4()
-    //Задание 5
-    task5()
-    //Задание 6
-    task6()
-}
+package firstmodule
+
+import secondmodule.task7
+
+
 
 
 /**
@@ -82,7 +73,8 @@ fun task4() {
 }
 
 /**
-Создайте переменную, содержащую последовательность английского алфавита наоборот – начиная с последней буквы алфавита и заканчивая первой буквой.
+    Создайте переменную, содержащую последовательность английского алфавита наоборот – начиная с последней буквы алфавита
+    и заканчивая первой буквой.
  */
 fun task5() {
     println("Task 5:")
@@ -126,14 +118,13 @@ fun task6() {
             isNumericSecondNum = false
         }
     }
-    if (firstnum > secondnum) {
-        print("Первое число больше второго")
-    } else if (firstnum < secondnum) {
-        print("Первое число меньше второго")
+    var expressionResult = firstnum >= secondnum
+    if (expressionResult) {
+        print("Первое число больше либо равно второму")
     } else {
-        print("Числа равны!")
+        print("Первое число меньше второго")
     }
     println()
 }
 
-    
+
