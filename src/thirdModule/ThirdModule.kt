@@ -63,8 +63,8 @@ fun task15() {
     Напишите функцию для переменных типа Double, возвращающую корень числа
 */
 
-fun task16(number: Double): Double{
-    var sqrt: Double = sqrt(number)
+fun Double.task16(): Double{
+    var sqrt: Double = sqrt(this)
     println(sqrt)
     return sqrt
 }
